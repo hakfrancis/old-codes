@@ -21,7 +21,7 @@ const getAndShow = async function (city) {
 	render(city_weather);
 }
 
-
+// Thsi function renders the UI to the frontend
 const render = function (city) {
 	currentCity_Weather.innerHTML = `
 		<h1 class="cityName">${city.name}</h1>
@@ -43,14 +43,14 @@ const render = function (city) {
 	`;
 }
 
-
+// This function controls the execution of the code
 const init = function () {
 	searchForm.addEventListener('submit', async e => {
 		e.preventDefault();
 		const query = searchForm.querySelector('input').value;
 		await getAndShow(query);
 	});
-	getAndShow('London');
+	getAndShow('London, UK');
 }
 
 init();
