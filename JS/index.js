@@ -40,6 +40,8 @@ const render = function (city) {
 					<p>Wind speed: <span>${city.wind_speed.toFixed(1)} m/s</span></p>
 				</li>
 			</ul>
+	
+	
 	`;
 }
 
